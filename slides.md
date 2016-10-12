@@ -68,7 +68,7 @@ bash <(curl https://nixos.org/nix/install)
 ## Removing nix
 
 ```
-rm -rf / nix
+rm -rf /nix
 ```
 
 ## Installing nix via reflex-platform
@@ -241,7 +241,7 @@ We can use `shell.nix` to do things straight away, and we can use `default.nix` 
 
 ## `nix-shell`
 
-If we have a `nix.shell` file, we can do
+If we have a `shell.nix` file, we can do
 ```
 nix-shell
 ```
@@ -954,7 +954,7 @@ in
 
 ## Choosing a compiler
 
-We could chose the compiler from the command line.
+We could choose the compiler from the command line.
 
 ## Choosing a compiler
 
@@ -965,7 +965,7 @@ From `shell.nix` we can see the options:
 ```
 which we can set while calling `nix-shell`:
 ```
-cabal-shell --arg compiler ghc7103
+nix-shell --arg compiler ghc7103
 ```
 
 ## Adding profiling
